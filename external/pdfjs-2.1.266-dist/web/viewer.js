@@ -1757,9 +1757,9 @@ var validateFileURL;
           origin = _ref8.origin,
           protocol = _ref8.protocol;
 
-      if (origin !== viewerOrigin && protocol !== 'blob:') {
+      /*if (origin !== viewerOrigin && protocol !== 'blob:') {
         throw new Error('file origin does not match viewer\'s');
-      }
+      }*/
     } catch (ex) {
       var message = ex && ex.message;
       PDFViewerApplication.l10n.get('loading_error', null, 'An error occurred while loading the PDF.').then(function (loadingErrorMessage) {
@@ -5132,7 +5132,7 @@ var defaultOptions = {
     kind: OptionKind.VIEWER
   },
   defaultUrl: {
-    value: 'compressed.tracemonkey-pldi-09.pdf',
+    value: 'Konsep_E-Book_Pemilu 2024_TERBARU.pdf',
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {
