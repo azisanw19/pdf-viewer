@@ -273,7 +273,7 @@
 .pdfViewer .page {
   direction: ltr;
   width: 816px;
-  height: 1056px;
+  height: auto; /* page default 1056px */
   margin: 1px auto -8px auto;
   position: relative;
   overflow: visible;
@@ -613,12 +613,12 @@ html[dir='rtl'] #sidebarContent {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   position: absolute;
-  top: 50%;
+  top: 50%; /* default 32 px,  */
   right: 0;
   bottom: 0;
   left: 0;
   outline: none;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* added */ 
 }
 #viewerContainer:not(.pdfPresentationMode) {
   transition-duration: 200ms;
