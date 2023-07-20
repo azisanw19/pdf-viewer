@@ -273,7 +273,7 @@
 .pdfViewer .page {
   direction: ltr;
   width: 816px;
-  height: 100%; /* page default 1056px */
+  height: 1056px; /* page default 1056px */
   margin: 1px auto -8px auto;
   position: relative;
   overflow: visible;
@@ -613,13 +613,29 @@ html[dir='rtl'] #sidebarContent {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   position: absolute;
-  top: 50%; /* default 32 px,  */
+  top: 32px; /* default 32 px,  */
   right: 0;
   bottom: 0;
   left: 0;
   outline: none;
-  transform: translateY(-50%); /* added */ 
+  /* transform: translateY(-50%); added   */
 }
+/* Edited */
+#viewer {
+  height: 100%;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+}
+
+#viewer .p1 {
+  top: 50%;
+}
+
+#viewer .page {
+  top: 50%;
+}
+/* End Edit */
 #viewerContainer:not(.pdfPresentationMode) {
   transition-duration: 200ms;
   transition-timing-function: ease;
